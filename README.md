@@ -1,4 +1,4 @@
-> **We are working on the new release that would have a lot more features to take development on Quorum to next level. Due to an architecture overhaul and additional components, the development is going on in a different repository that is not public yet. We are hoping to open it up by end of this month.**
+> **A newer version of Quorum Maker is available. V1.0 is no longer maintained. **
 
 # Quorum Maker
 
