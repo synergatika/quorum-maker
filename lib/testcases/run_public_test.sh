@@ -24,6 +24,6 @@ cp 2_deploy_contracts_data.js ../smart-contracts/migrations/.
 cd /home/testcases/smart-contracts
 npm install colors
 truffle migrate --reset 
-printf "\e[38;5;185mPublic contracts deployed successfully!\033[0m\n"
+printf "\e[38;5;21mPublic contracts deployed successfully!\033[0m\n"
 truffle test
 printf "\e[38;5;203mTruffle tests executed successfully!\033[0m\n"
