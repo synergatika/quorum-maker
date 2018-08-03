@@ -1,0 +1,22 @@
+const Storage = artifacts.require("Storage");
+
+contract('Storage', (accounts) => {
+
+  let instance
+  let owner = 0xa9538da9b22bbf25d11a76a3c866391a9cf5aeee
+  let account = accounts[1]
+
+  beforeEach(async () => {
+    instance = await Storage.deployed()
+  })
+
+  it("should check restriction", async () => {
+    try {
+      let result = await instance.restrictedFunction.call({from: owner})
+      assert.equal(result.toString(), owner)
+      console.log(`Account is valid owner`)
+    } catch (e) {
+      console.log(`${account} is not owner`)
+    }
+  })
+})
