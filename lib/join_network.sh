@@ -76,9 +76,15 @@ function copyScripts(){
     cp lib/slave/start_quorum_template.sh ${sNode}/node/start_${sNode}.sh
     
     cp lib/slave/start_template.sh ${sNode}/start.sh
+
+    cp lib/testNetwork.sh ${sNode}/.
+
+    cp -R lib/testcases ${sNode}/.
                 
     chmod +x ${sNode}/start.sh
     chmod +x ${sNode}/node/start_${sNode}.sh
+    chmod +x ${sNode}/testNetwork.sh
+    chmod +x ${sNode}/testcases
 
     cp lib/slave/pre_start_check_template.sh ${sNode}/node/pre_start_check.sh
 

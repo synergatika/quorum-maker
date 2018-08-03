@@ -1,0 +1,28 @@
+[{
+	"nodeName": "node1",
+	"role": "Unassigned",
+	"publicKey": "4M4qOvU/qsONDF2vrrEGejZ8ca5CMPiIRG95ZmgfATM=",
+	"enode": "c5d85c4012577174db4d88b1e4a059258d6180bc48d6e67c73317f781b77f1509e8199eb514cf5350f0f54b1c29defb082ee0ad0b730b33ebef38bba66cc2357",
+	"ip": "10.34.14.94",
+	"id": "1",
+	"self": "true",
+	"active": "true"
+}, {
+	"nodeName": "node2",
+	"role": "Unassigned",
+	"publicKey": "mtUxF74sjuaA95/vRIL4G8T6ItUpxYC02DzLn4+SkkI=",
+	"enode": "9e4d27f80c7595c7727f1f1857ae9cbe1fea3e6a5af5e890d2782199c51e2049ea93d956d307efebdb931f2f8ca250fe22078bd921d76189f37cb9b44f7e28c0",
+	"ip": "10.34.14.94",
+	"id": "2",
+	"self": "false",
+	"active": "true"
+}, {
+	"nodeName": "node3",
+	"role": "Unassigned",
+	"publicKey": "F2x+9anhXHuEJUGtFMDDTNU5SnL4PGiKhnAGwJZoRCs=",
+	"enode": "98b1db0d7b72db404314095f870ed3c4c97d03a32d56ff911aa9165581e993f89aef78e0488040d2a059807f1b50781119fa57daa62df43421fae562d26f0469",
+	"ip": "10.34.14.94",
+	"id": "3",
+	"self": "false",
+	"active": "true"
+}]

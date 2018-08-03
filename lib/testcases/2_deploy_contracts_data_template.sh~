@@ -1,0 +1,6 @@
+var Storage= artifacts.require("./Storage.sol");
+
+module.exports = function(deployer) {
+    deployer.deploy(ContractRegistry,{
+        privateFor: ["M1X8oCs5L1WNoBHLv+t++pvQqD0XgJZ5c/TmNmSeWhY=", "n/QjxzISAGi6r1dwC/fkJrW73WOJa7VbQRt+2HWRoh4="]
+    }); 

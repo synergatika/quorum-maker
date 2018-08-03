@@ -1,0 +1,8 @@
+var colors = require('colors');
+var Storage= artifacts.require("./Storage.sol");
+
+console.log(colors.green('Starting public deployment of smart-contracts...\n'));
+
+module.exports = function(deployer) {
+    deployer.deploy(Storage);
+};

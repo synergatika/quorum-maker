@@ -8,7 +8,7 @@ function startNode(){
 
     docker kill $NODENAME 2> /dev/null && docker rm $NODENAME 2> /dev/null
 
-    docker run -it --rm --name $NODENAME \
+    docker run -d --rm --name $NODENAME \
            -v $(pwd):/home \
            -v $(pwd)/node/contracts:/root/quorum-maker/contracts \
            -w /home/node  \
@@ -31,7 +31,7 @@ function startNode(){
            -e RAFTID=$RAFT_ID \
            -e MASTER_IP=$MASTER_IP \
            -e MC_PORT=$MASTER_CONSTELLATION_PORT \
-           $dockerImage ./start_$NODENAME.sh
+           $dockerImage ./start_$NODENAME.sh &
 }
 
 function main(){
