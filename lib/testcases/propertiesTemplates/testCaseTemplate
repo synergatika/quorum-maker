@@ -1,0 +1,19 @@
+it("should set value from nodeName1 & get from nodeName2. Other nodes should see this as a hash-only transaction", function (done) {
+    Storage.deployed()
+        .then(function (instance) {
+            storage = instance;
+            return instance.set("50", {
+          from: fromAcc,
+          privateFor: [nodes.nodeName.publicKey]
+        });
+    return instance.get();
+ }).then(function (result) {
+console.log(colors.white('Value 50 has been set!\n'));
+ console.log(colors.yellow('Private transaction hash result of value being set is ')+ result.tx);
+ storage.get().then(function(result){
+    console.log(colors.yellow('Value being retrieved as a private transaction is ') + result);
+    done();
+}).catch(done);
+
+});
+});

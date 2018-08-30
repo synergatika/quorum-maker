@@ -1,0 +1,26 @@
+var colors = require('colors');
+const Storage = artifacts.require("Storage");
+
+console.log(colors.cyan('Truffle tests are about to begin...\n'));
+
+contract("Storage", function (accounts) {
+  var fromAcc = accounts[0];
+
+const nodes = {
+  array
+};
+
+const setProvider = function (instance, url) {
+  const newProvider = new web3.providers.HttpProvider(url);
+  web3.setProvider(newProvider);
+  instance.contract._eth._requestManager.provider = newProvider;
+};
+
+it("should assert true", function (done) {
+    var storage = Storage.deployed();
+    assert.isTrue(true);
+    done();
+console.log(colors.blue('Contracts have been deployed successfully!\n'));
+})
+
+

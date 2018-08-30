@@ -16,6 +16,7 @@ address=$(cat output2.txt)
 curl -X POST --data '{"jsonrpc":"2.0","method":"personal_unlockAccount","params":['"$address"', "", 0],"id":1}' ${ip}:${rpcport} > unlock.json
 
 cd /home/testcases/smart-contracts
+#npm install colors
 truffle migrate --reset 
 printf "\e[38;5;165mPrivate contracts deployed successfully!\033[0m\n"
 cd ..

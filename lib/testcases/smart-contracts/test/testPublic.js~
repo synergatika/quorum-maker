@@ -18,7 +18,7 @@ it("should set value", function (done) {
             return instance.set("50");
  }).then(function (result) {
 console.log(colors.white('Value 50 has been set!\n'));
- console.log(colors.yellow('Transaction hash result of value being set is ')+ result.tx);
+ console.log(colors.yellow('Public transaction hash result of value being set is ')+ result.tx);
  storage.get().then(function(result){
     console.log(colors.yellow('Value being retrieved is ') + result);
     done();
