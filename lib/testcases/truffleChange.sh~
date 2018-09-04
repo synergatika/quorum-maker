@@ -30,7 +30,7 @@ cd ..
 
 #Fetch active nodes count
 sleep 10
-curl http://$ip:$nodeMPort/activeNodes > files/activeNodes.json
+curl -s http://$ip:$nodeMPort/activeNodes > files/activeNodes.json
 activeNodes=$(cat files/activeNodes.json)
 nodecount=$(jq '.nodeCount' files/activeNodes.json) 
 

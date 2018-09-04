@@ -3,7 +3,7 @@
 cd /home/testcases/files/
 nodemPort=$(cat nodeManagerPort)
 ip=$(cat ip)
-curl http://$ip:$nodemPort/getNodeList > getNodeList.json
+curl -s http://$ip:$nodemPort/getNodeList > getNodeList.json
 
 #Public keys are put into an array
 echo "$x" | jq -r '.[]|"\(.publicKey)"' getNodeList.json > orig-data-filePubKey
